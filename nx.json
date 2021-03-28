@@ -1,9 +1,14 @@
 {
   "npmScope": "stores",
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
@@ -11,13 +16,29 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "N2U0NjI0YzctYzAzMy00ZWI2LWI3OTQtNGVkYzRhMjZlNWE4fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
     }
   },
   "projects": {
-    "nest-api": { "tags": [] },
-    "express-api": { "tags": [] },
-    "number-utils": { "tags": [] }
+    "nest-api": {
+      "tags": []
+    },
+    "express-api": {
+      "tags": []
+    },
+    "number-utils": {
+      "tags": []
+    }
   }
 }
